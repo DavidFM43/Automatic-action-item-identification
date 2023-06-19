@@ -8,7 +8,7 @@ from pyannote.audio.pipelines.speaker_verification import \
 from pyannote.core import Segment
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import silhouette_score
-from utils import convert_time
+from dive.utils import convert_time
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
