@@ -23,8 +23,8 @@ Answer: Yes
 
 Now, identify the action item present in the meeting transcript.
 Action Item: {{gen "text" max_tokens=20}}
-Identify the assigne of that action item, this should be a persons name. If there is no clear assigne the set it to 'UNKNOWN'.
-Assigne: {{gen "assignee"}}
+Identify the assignee of that action item, this should be a persons name. If there is no clear assignee the set it to 'UNKNOWN'.
+Assignee: {{gen "assignee"}}
 At what time during the meeting was the action item mentioned?
 Time: {{gen "time" max_tokens=7}}"""
 )
@@ -67,7 +67,7 @@ def identify_ais(transcription_df, silent=True):
             action_items.append(
                 {
                     "text": ai["text"].strip(),
-                    "assigne": ai["assigne"].strip(),
+                    "assignee": ai["assignee"].strip(),
                     "ts": ai["time"].strip(),
                 }
             )
