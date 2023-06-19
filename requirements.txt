@@ -6,5 +6,5 @@ transformers
 bitsandbytes
 accelerate
 loralib
-https://github.com/huggingface/peft.git
+git+https://github.com/huggingface/peft.git
 guidance
