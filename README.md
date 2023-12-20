@@ -1,3 +1,7 @@
+# Automatic Action Item Identification
+
+This project implements a tool for automatically extracting the action items from a meeting recording. It utilizes OpenAI's Whisper model to transcribe the recording and the Guidance framework from Microsoft to dynamically extract the action items from the text using Alpaca-LoRA as the LLM. For a more in depth explanation, look at `APPROACH.md`.
+
 # **Setup**
 1. Create a virtual environment with Python 3.9, preferably with `conda`. Use the following command:
 ```bash
@@ -26,7 +30,7 @@ from dive.utils import download_yt_video
 from dive.gen_data import generate_transcription
 from dive.identify_ais import identify_ais
 
-# YouTuve url to a sample meeting video
+# YouTube url to a sample meeting video
 yt_url = "https://www.youtube.com/watch?v=lBVtvOpU80Q"
 audio_path = download_yt_video(yt_url)
 
