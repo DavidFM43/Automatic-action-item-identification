@@ -1,5 +1,7 @@
 # **Approach**
 
+[**Loom Demo Video**](https://www.loom.com/share/074c1c1624d842f1b75662ca86a9c7a7?sid=adda0c3e-84c1-4b05-8f65-04071f800eba)
+
 ### **Data generation**
 
 For the data generation objective I considered mainly two options, and explored both of them:
